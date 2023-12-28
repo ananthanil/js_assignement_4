@@ -12,6 +12,9 @@ let counting_value = document.getElementById("counting_value")
 let imageScreen = document.getElementById("img_screen")
 let imageButton = document.getElementById("img_btn")
 
+let dropDownValue = document.getElementById("colorSelect")
+let sampleText = document.getElementById("sample_text")
+
 let imgCount =1
 
 
@@ -28,6 +31,24 @@ imageButton.addEventListener('click', function() {
    imgCount ++;
 
 });
+
+const changeColor = ()=>{
+    
+    let value = dropDownValue.value
+
+    if(value=="red"){
+        sampleText.style.color='red'
+    }
+    if(value=="green"){
+        sampleText.style.color='green'
+    }
+    if(value=="white"){
+        sampleText.style.color='white'
+    }
+    if(value=="black"){
+        sampleText.style.color='black'
+    }
+}
 
 const getSphereVolume=()=>{
     let calculate = (4/3)*3.14159265359*radius.value**3;
