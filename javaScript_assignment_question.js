@@ -15,6 +15,10 @@ let imageButton = document.getElementById("img_btn")
 let dropDownValue = document.getElementById("colorSelect")
 let sampleText = document.getElementById("sample_text")
 
+let form = document.getElementById("form1")
+
+
+
 let imgCount =1
 
 
@@ -32,8 +36,8 @@ imageButton.addEventListener('click', function() {
 
 });
 
-const changeColor = ()=>{
-    
+const changeColor=()=>{
+
     let value = dropDownValue.value
 
     if(value=="red"){
@@ -48,6 +52,14 @@ const changeColor = ()=>{
     if(value=="black"){
         sampleText.style.color='black'
     }
+}
+
+const getDetails = () =>{
+    let f_name= form.elements["fname"].value
+    let l_name= form.elements["lname"].value
+    console.log("f_name",f_name)
+    console.log("l_name",l_name)
+    return false;
 }
 
 const getSphereVolume=()=>{
