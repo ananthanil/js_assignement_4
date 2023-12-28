@@ -47,19 +47,7 @@ imageButton.addEventListener('click', function() {
 const changeColor=()=>{
 
     let value = dropDownValue.value
-
-    if(value=="red"){
-        sampleText.style.color='red'
-    }
-    if(value=="green"){
-        sampleText.style.color='green'
-    }
-    if(value=="white"){
-        sampleText.style.color='white'
-    }
-    if(value=="black"){
-        sampleText.style.color='black'
-    }
+    sampleText.style.color=value
 }
 
 const getDetails = () =>{
