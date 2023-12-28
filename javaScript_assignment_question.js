@@ -17,9 +17,17 @@ let sampleText = document.getElementById("sample_text")
 
 let form = document.getElementById("form1")
 
-
+let DdownList = document.getElementById("colorSelectDelete")
 
 let imgCount =1
+
+const deleteSelected = () =>{
+
+    let selectedValue = DdownList.value
+
+    DdownList.remove(selectedValue)
+
+}
 
 
 imageButton.addEventListener('click', function() {
