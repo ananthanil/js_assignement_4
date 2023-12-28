@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h3>Q1</h3>
+
+    <h3>Q2</h3>
+
+    <h3>Q3</h3>
+
+    <h3>Q4 volume of a Sphere</h3>
+    <label for="radius">Enter Radius</label>
+    <input type="number" id="radius">
+    <label for="volume">Volume</label>
+    <input type="number" id="volume">
+    <button onclick="getSphereVolume()">Calculate</button>
+
+    <h3>Q5 Display a random image</h3>
+    <img src="https://farm4.staticflickr.com/3691/11268502654_f28f05966c_m.jpg"  id="img_screen">
+    <button id="img_btn">Image Change</button>
+
+    <h3>Q6 open a new browser window with a specific URL</h3>
+    <p><span> <button onclick="openSpecificUrl()">Click Here</button> </span> open in a new browser window </p>
+
+    <h3>Q7 Redirects the user to a different URL</h3>
+    <p><span> <button onclick="redirect()">Click Here</button> </span> to redirect the user </p>
+
+
+    <h3>Q8 display the current URL's protocol, hostname, and query</h3>
+    <p><span>URL Protocol :<span id="protcol"></span></span></p>
+    <p><span>URL HostName :<span id="HostName"></span></span></p>
+    <button onclick="getUrl()">URL Location</button>
+
+    <h3>Q9 Reloads the current page</h3>
+    <P>Click here to <span> <button onclick="reLoad()">Reload</button></span></P> 
+    
+
+    <h3>Q10- Scrren Size</h3>
+    <p><span>Width : <span id="s_width">0</span> X Height : <span id="s_height"> 0</span></span></p>
+    <button onclick="getScreenSize()"> click here to get screen size </button>
+    <button onclick="clearScreenSize()"> clear </button>
+    
+    <h3>Q11- Counter</h3>
+    <span>Counter : <p Counterp id="counting_value">0</p></span>
+    <button onclick="counter()"> Start </button>
+
+    <script src="./javaScript_assignment_question.js"></script>
+
+</body>
+</html>
